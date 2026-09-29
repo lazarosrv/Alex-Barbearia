@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #111;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CABEÇALHO */
+
+header {
+    background-color: #0b0b0b;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #292929;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    color: #d4af37;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+/* INÍCIO */
+
+main {
+    min-height: 90vh;
+    padding: 80px 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+
+main p:first-child {
+    font-size: 48px;
+    font-weight: bold;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+main p:nth-child(2) {
+    color: #ccc;
+    font-size: 18px;
+    max-width: 500px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+main img {
+    position: absolute;
+    width: 45%;
+    max-width: 550px;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* BOTÃO */
+
+input[type="button"] {
+    background-color: #d4af37;
+    color: #111;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: #f0ca4d;
+    transform: translateY(-3px);
+}
+
+/* SEÇÕES */
+
+section {
+    padding: 90px 7%;
+}
+
+section p {
+    line-height: 1.7;
+}
+
+/* SERVIÇOS */
+
+#Servicos {
+    background-color: #181818;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+#Servicos h2{
+    width: 100%;
+    font-size: 40px;
+    padding: 10px;
+}
+
+
+#Servicos div p {
+    background-color: #222;
+    margin: 15px auto;
+    padding: 10px;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+
+#Servicos div:hover {
+    transform: translateY(-7px);
+    border-color: #d4af37;
+    
+}
+
+
+#Servicos div p:first-child {
+   font-size: 26px;
+    font-weight: bold;
+    
+}
+
+#Servicos div p:nth-child(2) {
+    color: #ffd650;
+}
+
+#Servicos div{
+    background-color:#111;
+    padding: 20px;
+    border-radius: 13px;
+    width: 30%;
+    border: 2px solid #f0ca4d;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+     transition: 0.3s;  
+}
+
+/* SOBRE */
+
+#Sobre {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#Sobre p {
+    flex: 1;
+    font-size: 18px;
+    color: #ccc;
+}
+
+#Sobre img {
+    width: 45%;
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+/* POR QUE ESCOLHER */
+
+#Porque {
+    background-color: #181818;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#Porque h2 {
+    width: 100%;
+    font-size: 40px;
+    padding: 10px;
+}
+
+#Porque div {
+    background-color:#111;
+    border: 2px solid #333;
+    border-radius: 13px;
+    padding: 25px;
+    width: 23%;
+    transition: 0.3s;
+}
+
+#Porque div:hover {
+    transform: translateY(-7px);
+    border-color: #d4af37;
+}
+
+#Porque h3 {
+    color: #d4af37;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+#Porque p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* CONTATO */
+
+#Contato {
+    background-color:#111;
+    line-height: 2;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+#Contato h2{
+    width: 100%;
+    font-size: 40px;
+    padding: 10px;
+}
+
+#Contato p {
+    color: #f0ca4d;
+    padding: 25px;
+}
+#Contato div p {
+    color: #ccc;
+    padding: 5px;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: #080808;
+    text-align: center;
+    padding: 25px;
+    color: #999;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }   
+
+    #Servicos {
+    flex-direction: column;
+    gap: 10px;
+    }
+    #Servicos div {
+        width: 100%;
+        
+    }
+
+    main {
+        padding: 60px 20px;
+        min-height: auto;
+    }
+
+    main p:first-child {
+        font-size: 36px;
+    }
+
+    main img {
+    position: static;
+    transform: none;
+    width: 80%;
+    max-width: 400px;
+    margin: 40px auto 0;
+    }
+
+    #Sobre {
+        flex-direction: column;
+        padding: 60px 20px;
+    }
+
+    #Sobre img {
+        width: 100%;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    #Porque {
+    flex-direction: column;
+    gap: 15px;
+    }
+
+    #Porque div {
+        width: 100%;
+    }
+}
